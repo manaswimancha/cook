@@ -2,23 +2,19 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 
 function App() {
-  // Initialize the cookie count from localStorage or default to 0
   const [cookies, setCookies] = useState(() => {
     const savedCookies = localStorage.getItem('cookies');
     return savedCookies ? parseInt(savedCookies, 10) : 0;
   });
 
-  // Save the cookie count in localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem('cookies', cookies);
   }, [cookies]);
 
-  // Increment the cookie count when the button is clicked
   const handleClick = () => {
     setCookies(cookies + 1);
   };
 
-  // Reset the cookie count
   const handleReset = () => {
     setCookies(0);
   };
