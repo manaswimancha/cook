@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #333;
+}
+
+p {
+  font-size: 2rem;
+}
+
+button {
+  background-color: #f9a825;
+  border: none;
+  padding: 15px 30px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #fbc02d;
+}
+
+button:active {
+  transform: scale(0.98);
+}
